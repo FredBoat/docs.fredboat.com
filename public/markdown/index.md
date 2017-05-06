@@ -13,7 +13,7 @@ __If you want music__ you should be using https://discordapp.com/oauth2/authoriz
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;play \<url\>             | Plays music from the given URLs. See supported sources below.         | ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
+| ;;play ***url***             | Plays music from the given URLs. See supported sources below.       | ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
 | ;;list                     | Displays a list of the current songs in the playlist.                 | ;;list                                      |
 | ;;nowplaying               | Displays the currently playing song.                                  | ;;nowplaying                                |
 | ;;skip                     | Skips the current song. Please use in moderation.                     | ;;skip                                      |
@@ -24,10 +24,10 @@ __If you want music__ you should be using https://discordapp.com/oauth2/authoriz
 | ;;leave                    | Makes the bot leave the current voice channel.                        | ;;leave                                     |
 | ;;repeat                   | Changes the repeat mode. Run this command for more info.              | ;;repeat all                                |
 | ;;shuffle                  | Toggles shuffle mode for the current queue.                           | ;;shuffle                                   |
-| ;;fwd \<time\>             | Forwards the track by a given amount of time.                         | ;;fwd 2:30                                  |
-| ;;rew \<time\>             | Rewinds the track by a given amount of time.                          | ;;rew 30                                    |
-| ;;seek \<time\>            | Sets the position of the track to the given time.                     | ;;seek 2:45:00                              |
-| ;;split                    | Takes a YouTube track and splits the track based on the tracklist.    | ;;split \<yt-track\>                                          |
+| ;;fwd ***time***           | Forwards the track by a given amount of time.                         | ;;fwd 2:30                                  |
+| ;;rew ***time***           | Rewinds the track by a given amount of time.                          | ;;rew 30                                    |
+| ;;seek ***time***          | Sets the position of the track to the given time.                     | ;;seek 2:45:00                              |
+| ;;split                    | Takes a YouTube track and splits the track based on the tracklist.    | ;;split https://www.youtube.com/watch?v=8EdW28B-In4   |
 
 ## Non-music Commands
 [(Requires the original bot)](https://discordapp.com/oauth2/authorize?&client_id=168686772216135681&scope=bot).
@@ -35,13 +35,13 @@ __If you want music__ you should be using https://discordapp.com/oauth2/authoriz
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
 | ;;help                     | Sends a PM with instructions and a link to this site.                 | ;;help                                      |
-| ;;say \<text\>             | Makes the bot echo something.                                         | ;;say test                                  |
+| ;;say ***text***             | Makes the bot echo something.                                         | ;;say test                                  |
 | ;;avatar                   | Displays the avatar of a user.                                        | ;;avatar @Frederikam                        |
-| ;;brainfuck \<code\> \[input\] | Executes [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) code. | ;;brainfuck ,.+.+. a                        |
-| ;;riot \<text\>            | Transforms text, [example](https://fred.moe/qxB.png)                  | ;;riot Hello, world                         |
+| ;;brainfuck ***code*** \[input\] | Executes [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) code. | ;;brainfuck ,.+.+. a                        |
+| ;;riot ***text***            | Transforms text, [example](https://fred.moe/qxB.png)                  | ;;riot Hello, world                         |
 | ;;lenny                    | Sends a lenny face.                                                   | ;;lenny                                     |
-| ;;mal \<search term\>      | Searches MyAnimeList for animes and users.                            | ;;mal re:zero                               |
-| ;;dump \<1-2000\>          | Dumps between 1 and 2000 messages to [Hastebin](http://hastebin.com/) | ;;dump 1000                                 |
+| ;;mal ***search term***      | Searches MyAnimeList for animes and users.                            | ;;mal re:zero                               |
+| ;;dump ***1-2000***          | Dumps between 1 and 2000 messages to [Hastebin](http://hastebin.com/) | ;;dump 1000                                 |
 | ;;facedesk                 | Uploads an image.                                                     | ;;facedesk                                  |
 | ;;roll                     | Uploads an image.                                                     | ;;roll                                      |
 
