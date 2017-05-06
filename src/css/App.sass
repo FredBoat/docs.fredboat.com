@@ -1,6 +1,7 @@
 $fredboatColor: #1CBFE2
 $tocBg: #3A3D3E
 $pageMargin: 100px
+$tocWidth: 216px
 $headerHeight: 64px
 
 .header
@@ -16,17 +17,21 @@ $headerHeight: 64px
     display: inline
     float: left
 
-.logo-text, .logo-text-docs
+.logo-text
     display: inline
     font-family: "Fugaz One", sans-serif
     font-size: 32px
     line-height: 64px
+
+.page-body
+    display: flex
 
 .table-of-contents
     width: 216px
     height: calc(100vh - #{$headerHeight})
     padding-left: calc(#{$pageMargin} + 28px)
     background-color: $tocBg
+
 
 .toc-title
     color: white
@@ -35,3 +40,7 @@ $headerHeight: 64px
     font-size: 20px
     text-transform: uppercase
     padding-top: 16px
+
+.Markdown
+    height: calc(100vh - #{$headerHeight})
+    width: calc(100vw - #{$tocWidth})

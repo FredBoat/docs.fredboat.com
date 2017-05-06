@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./css/App.css";
 import logo from "../public/logo.svg";
+import Markdown from "./Markdown";
 
 class App extends Component {
     render() {
@@ -11,11 +12,16 @@ class App extends Component {
                     <div className="logo-text">FredBoat</div>
                 </div>
 
-                <div className="table-of-contents">
-                    <div className="toc-title">
-                        Contents
+                <div className="page-body">
+                    <div className="table-of-contents">
+                        <div className="toc-title">
+                            Contents
+                        </div>
                     </div>
+
+                    <Markdown name="index"/>
                 </div>
+
             </div>
         )
     }
