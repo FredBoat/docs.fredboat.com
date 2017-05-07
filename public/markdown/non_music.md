@@ -1,7 +1,7 @@
-## Non-music Commands
+# Non-music Commands
 [(Requires the original bot)](https://discordapp.com/oauth2/authorize?&client_id=168686772216135681&scope=bot).
 
-### Fun
+## Fun
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
@@ -14,7 +14,7 @@
 | ;;riot ***text***          | Transforms text, [example](https://fred.moe/qxB.png)                  | ;;riot Hello, world                              |
 | ;;roll                     | Roll around.                                                          | ;;roll                     
 
-### Utility
+## Utility
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
@@ -30,7 +30,7 @@
 
 # TO DO:
 
-### Memes
+## Memes
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
@@ -46,7 +46,7 @@
 | ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
 
 
-### Moderation
+## Moderation
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|

@@ -1,4 +1,4 @@
-## Music Commands
+# Music Commands
 [(Requires the music bot)](https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot).
 
 | Command                    | Description                                                           | Example usage                               |
