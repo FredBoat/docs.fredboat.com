@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Loading from 'react-loading-animation';
 import marked from 'marked';
-
+import hljs from 'highlight.js';
 import "./css/Markdown.css";
+import "highlight.js/styles/monokai-sublime.css";
 
 class Markdown extends Component {
     constructor(props) {
@@ -38,7 +39,7 @@ class Markdown extends Component {
             }
         };
         xmlHttp.open("GET", window.location.origin + "/markdown/" + instance.props.name + ".md", true); // true for asynchronous
-        xmlHttp.send(null)
+        xmlHttp.send(null);
     }
 
     render() {
@@ -49,13 +50,13 @@ class Markdown extends Component {
                 <div className="Loading">
                     <Loading/>
                 </div>
-            )
+            );
 
             this.processMarkdown(this);
         } else {
             inner = (
                 <div className="content" dangerouslySetInnerHTML={{__html: this.state.loadedMarkdown}}/>
-            )
+            );
         }
 
         return (
@@ -63,6 +64,16 @@ class Markdown extends Component {
                 {inner}
             </div>
         )
+    }
+
+    componentDidUpdate() {
+        const blocks = document.querySelectorAll(".lang-yaml");
+
+        for (let i = 0; i < blocks.length; i++) {
+            console.log(i);
+            blocks[i].className += " yaml";
+            hljs.highlightBlock(blocks[i])
+        }
     }
 }
 
