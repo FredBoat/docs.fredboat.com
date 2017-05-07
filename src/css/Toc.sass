@@ -1,0 +1,27 @@
+@import App.sass
+
+.Toc
+    width: 216px
+    height: calc(100vh - #{$headerHeight})
+    padding-left: calc(#{$pageMargin} + 28px)
+    background-color: $tocBg
+    font-family: 'Pragmati Narrow', sans-serif
+    flex-grow: 1
+
+    .toc-title
+        color: white
+        font-weight: bold
+        font-size: 20px
+        text-transform: uppercase
+        padding-top: 32px
+        margin-bottom: 16px
+    .toc-separator
+        width: 90%
+        height: 1px
+        margin: 16px 10% 16px 0
+        background-color: $tocBorderColor
+    h2
+        text-transform: uppercase
+        font-size: 16px
+        color: white
+        margin-bottom: 16px
