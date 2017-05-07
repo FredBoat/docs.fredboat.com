@@ -20,32 +20,38 @@ class Markdown extends Component {
         });
 
         this.state = {
-            loadedMarkdown: null
+            loadedMarkdown: null,
+            loadedPage: null
         };
 
+        this.processMarkdown(this);
+    }
+
+    processMarkdown(instance) {
         const xmlHttp = new XMLHttpRequest();
-        let instance = this;
         xmlHttp.onreadystatechange = function() {
             if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
                 instance.setState((prevState) =>({
-                    loadedMarkdown: marked(xmlHttp.responseText)
+                    loadedMarkdown: marked(xmlHttp.responseText),
+                    loadedPage: instance.props.name
                 }))
             }
         };
-        xmlHttp.open("GET", window.location.origin + "/markdown/" + props.name + ".md", true); // true for asynchronous
+        xmlHttp.open("GET", window.location.origin + "/markdown/" + instance.props.name + ".md", true); // true for asynchronous
         xmlHttp.send(null)
-        //xmlHttp.send(null);
     }
 
     render() {
         let inner = null;
 
-        if(this.state.loadedMarkdown === null) {
+        if(this.state.loadedPage !== this.props.name) {
             inner = (
                 <div className="Loading">
                     <Loading/>
                 </div>
             )
+
+            this.processMarkdown(this);
         } else {
             inner = (
                 <div className="content" dangerouslySetInnerHTML={{__html: this.state.loadedMarkdown}}/>
