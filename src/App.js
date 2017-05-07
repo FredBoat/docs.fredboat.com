@@ -20,9 +20,9 @@ class App extends Component {
                         </div>
                         <TocHeader activePage={this.props.page} page="index" name="Quickstart"/>
                         <TocHeader activePage={this.props.page} page="faq" name="FAQ"/>
-                        <TocHeader activePage={this.props.page} page="terms" name="Terms of Service"/>
                         <TocHeader activePage={this.props.page} page="selfhosting" name="Selfhosting"/>
                         <TocHeader activePage={this.props.page} page="systemdservice" name="Selfhosting (systemd)"/>
+                        <TocHeader activePage={this.props.page} page="terms" name="Terms of Service"/>
                     </div>
 
                     <Markdown name={this.props.page}/>
