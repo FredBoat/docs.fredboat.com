@@ -7,7 +7,7 @@ class TocHeader extends Component {
         return (
             <div className="TocHeader">
                 <Link to={"/" + this.props.page}>
-                    <h1>
+                    <h1 className={this.props.activePage === this.props.page ? "active" : ""}>
                         {this.props.name}
                     </h1>
                 </Link>

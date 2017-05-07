@@ -18,11 +18,11 @@ class App extends Component {
                         <div className="toc-title">
                             Contents
                         </div>
-                        <TocHeader page="index" name="Quickstart"/>
-                        <TocHeader page="faq" name="FAQ"/>
-                        <TocHeader page="terms" name="Terms of Service"/>
-                        <TocHeader page="selfhosting" name="Selfhosting"/>
-                        <TocHeader page="systemdservice" name="Selfhosting (systemd)"/>
+                        <TocHeader activePage={this.props.page} page="index" name="Quickstart"/>
+                        <TocHeader activePage={this.props.page} page="faq" name="FAQ"/>
+                        <TocHeader activePage={this.props.page} page="terms" name="Terms of Service"/>
+                        <TocHeader activePage={this.props.page} page="selfhosting" name="Selfhosting"/>
+                        <TocHeader activePage={this.props.page} page="systemdservice" name="Selfhosting (systemd)"/>
                     </div>
 
                     <Markdown name={this.props.page}/>
