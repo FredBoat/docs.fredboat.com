@@ -67,12 +67,15 @@ class Markdown extends Component {
     }
 
     componentDidUpdate() {
-        const blocks = document.querySelectorAll(".lang-yaml");
+        const langs = ["yaml"];
 
-        for (let i = 0; i < blocks.length; i++) {
-            console.log(i);
-            blocks[i].className += " yaml";
-            hljs.highlightBlock(blocks[i])
+        for (let i in langs) {
+            const blocks = document.querySelectorAll(".lang-" + langs[i]);
+
+            for (let j = 0; j < blocks.length; j++) {
+                blocks[j].className += " " + langs[i];
+                hljs.highlightBlock(blocks[j])
+            }
         }
     }
 }
