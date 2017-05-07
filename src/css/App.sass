@@ -1,6 +1,7 @@
 $fredboatColor: #1CBFE2
 $tocBg: #2E3136
 $tocBorderColor: #4c5059
+$blurple: #7289DA
 $pageMargin: 100px
 $tocWidth: 300px
 $headerHeight: 64px
@@ -26,6 +27,64 @@ $headerHeight: 64px
     line-height: 64px
     user-select: none
     cursor: default
+
+.header-left
+    height: 100%
+    display: inline
+    position: relative
+    bottom: 3px
+    width: 0
+    margin-left: 42px
+
+.header-right
+    float: right
+    height: 100%
+    position: relative
+    bottom: 12px
+    user-select: none
+
+    .icons
+        display: inline
+        height: 32px
+        margin-top: 16px
+        img
+            margin: 16px 8px 0 8px
+        a, img
+            height: 32px
+            width: 32px
+
+.discord > img
+    height: 44px !important
+    width: 44px !important
+    position: relative
+    top: 8px
+
+.twitter > img
+    height: 40px !important
+    width: 40px !important
+    position: relative
+    top: 4px
+
+.header-button
+    color: #eeeeee
+    text-decoration: none
+    font-family: Lato, sans-serif
+    height: 32px
+    line-height: 32px
+    margin: 16px 16px 16px 16px
+    display: inline-block
+    font-size: 16px
+    position: relative
+    bottom: 10px
+
+.header-button:hover
+    color: white
+
+.header-button
+    border-right: none
+
+.header-button:first-child
+    border-left: none
 
 .page-body
     display: flex
