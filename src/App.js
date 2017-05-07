@@ -21,17 +21,17 @@ class App extends Component {
                     <div className="header-right">
                         <a className="header-button" href="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot">Add to Discord</a>
                         <div className="icons">
-                            <a className="discord" href="https://discord.gg/cgPFW4q" alt="Discord">
-                                <img src={discord}/>
+                            <a className="discord" href="https://discord.gg/cgPFW4q">
+                                <img src={discord} alt="Discord"/>
                             </a>
-                            <a className="patreon" href="https://www.patreon.com/fredboat" alt="Patreon">
-                                <img src={patreon}/>
+                            <a className="patreon" href="https://www.patreon.com/fredboat">
+                                <img src={patreon} alt="Patreon"/>
                             </a>
-                            <a className="twitter" href="https://twitter.com/DiscordFredBoat" alt="Twitter">
-                                <img src={twitter}/>
+                            <a className="twitter" href="https://twitter.com/DiscordFredBoat">
+                                <img src={twitter} alt="Twitter"/>
                             </a>
-                            <a className="github" href="https://github.com/Frederikam/FredBoat" alt="GitHub">
-                                <img src={github}/>
+                            <a className="github" href="https://github.com/Frederikam/FredBoat">
+                                <img src={github} alt="GitHub"/>
                             </a>
                         </div>
 

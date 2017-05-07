@@ -40,30 +40,35 @@ $headerHeight: 64px
     float: right
     height: 100%
     position: relative
-    bottom: 12px
+    bottom: 6px
     user-select: none
 
     .icons
         display: inline
-        height: 32px
-        margin-top: 16px
+        height: 16px
+
         img
-            margin: 16px 8px 0 8px
+            margin: 24px 6px 0 6px
+            opacity: 0.8
+            transition: opacity .5s
+        img:hover
+            opacity: 1
         a, img
-            height: 32px
-            width: 32px
+            height: 16px
+            width: 16px
+
 
 .discord > img
-    height: 44px !important
-    width: 44px !important
-    position: relative
-    top: 8px
-
-.twitter > img
-    height: 40px !important
-    width: 40px !important
+    height: 22px !important
+    width: 22px !important
     position: relative
     top: 4px
+
+.twitter > img
+    height: 20px !important
+    width: 20px !important
+    position: relative
+    top: 2px
 
 .header-button
     color: #eeeeee
@@ -75,7 +80,12 @@ $headerHeight: 64px
     display: inline-block
     font-size: 16px
     position: relative
-    bottom: 10px
+    bottom: 3px
+    opacity: 0.8
+    transition: opacity .5s
+
+.header-button:hover
+    opacity: 1
 
 .header-button:hover
     color: white
