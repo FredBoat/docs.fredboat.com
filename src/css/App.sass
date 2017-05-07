@@ -1,5 +1,6 @@
 $fredboatColor: #1CBFE2
 $tocBg: #2E3136
+$tocBorderColor: #4c5059
 $pageMargin: 100px
 $tocWidth: 216px
 $headerHeight: 64px
@@ -31,18 +32,29 @@ $headerHeight: 64px
     height: calc(100vh - #{$headerHeight})
     padding-left: calc(#{$pageMargin} + 28px)
     background-color: $tocBg
-
-.toc-title
-    color: white
     font-family: 'Pragmati Narrow', sans-serif
-    font-weight: bold
-    font-size: 20px
-    text-transform: uppercase
-    padding-top: 16px
+
+    .toc-title
+        color: white
+        font-weight: bold
+        font-size: 20px
+        text-transform: uppercase
+        padding-top: 16px
+    .toc-separator
+        width: 90%
+        height: 1px
+        margin: 8px 10% 8px 0
+        background-color: $tocBorderColor
+    h2
+        text-transform: uppercase
+        font-size: 16px
+        color: white
+        margin-bottom: 2px
+
+
 
 .Markdown
     height: calc(100vh - #{$headerHeight})
     width: calc(100vw - #{$tocWidth})
     border-left: 1px solid #4c5059
-
 
