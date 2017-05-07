@@ -24,8 +24,8 @@
 | ;;help OR ;;help ***command*** | Receive help for this bot or help for any command.                    | ;;help OR ;;help avatar                               |
 | ;;invite                   | Posts invite link for this bot.                                        | ;;invite                               |
 | ;;mal ***search term***    | Searches MyAnimeList for animes and users.                            | ;;mal re:zero                             |
-| ;;say ***text***            | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;serverinfo                 | Displays some stats about this guild.                                   | ;;akinator                               |
+| ;;say ***text***            | Makes the bot echo something.                                   | ;;say test                               |
+| ;;serverinfo                 | Displays some stats about this guild.                                   | ;;serverinfo                               |
 | ;;userinfo OR ;;userinfo ***@username***                 | Displays information about yourself or a user known to the bot.                                   | ;;userinfo OR ;;userinfo @FredBoat♪♪#7284                        |
 
 # TO DO:
@@ -50,11 +50,7 @@
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
+| ;;clear                    | Deletes all messages by this bot in the last 50 messages of this channel.   | ;;clear                         |
+| ;;hardban ***@user***       | Bans a user and deletes his messages from the last 7 days.             | ;;hardban @Frederikam                               |
+| ;;kick ***@user***          | Kick a user from this guild.                                   | ;;kick @ObeIisk                               |
+| ;;softban ***@user***       | Softbans a user by kicking him and deleting his messages from the last 7 days.                                   | ;;softban @ObeIisk                              |
