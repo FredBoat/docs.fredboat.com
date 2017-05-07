@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./css/App.css";
 import logo from "../public/logo.svg";
 import Markdown from "./Markdown";
+import TocHeader from "./TocHeader";
 
 class App extends Component {
     render() {
@@ -17,11 +18,15 @@ class App extends Component {
                         <div className="toc-title">
                             Contents
                         </div>
+                        <TocHeader page="index" name="Quickstart"/>
+                        <TocHeader page="faq" name="FAQ"/>
+                        <TocHeader page="terms" name="Terms of Service"/>
+                        <TocHeader page="selfhosting" name="Selfhosting"/>
+                        <TocHeader page="systemdservice" name="Selfhosting (systemd)"/>
                     </div>
 
-                    <Markdown name="index"/>
+                    <Markdown name={this.props.page}/>
                 </div>
-
             </div>
         )
     }

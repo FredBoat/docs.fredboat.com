@@ -138,4 +138,6 @@ Special thanks to EJ Technologies for providing us with open source licenses for
 
 [![JProfiler](https://www.ej-technologies.com/images/product_banners/jprofiler_large.png)](https://www.ej-technologies.com/products/jprofiler/overview.html)
 
+This site is hosted as an open source project on [https://www.netlify.com/](Netlify).
+
 The FredBoat logo was created by Sturm/JDK\#0216.
