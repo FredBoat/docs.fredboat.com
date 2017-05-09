@@ -3,7 +3,7 @@
 
 | Command                    | Description                                                           | Example usage                               |
 |----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;play ***url***             | Plays music from the given URLs. See supported sources below.       | ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
+| ;;play ***url***           | Plays music from the given URLs. See supported sources below.       | ;;play https://www.youtube.com/watch?v=dQw4w9WgXcQ     |
 | ;;list                     | Displays a list of the current songs in the playlist.                 | ;;list                                      |
 | ;;nowplaying               | Displays the currently playing song.                                  | ;;nowplaying                                |
 | ;;skip                     | Skips the current song. Please use in moderation.                     | ;;skip                                      |
