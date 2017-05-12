@@ -39,7 +39,7 @@ class App extends Component {
                 </div>
 
                 <div className="page-body">
-                    <Toc/>
+                    <Toc page={this.props.page}/>
 
                     <Markdown name={this.props.page}/>
                 </div>
