@@ -1,6 +1,17 @@
 # Non-music Commands
 [(Requires the original bot)](https://discordapp.com/oauth2/authorize?&client_id=168686772216135681&scope=bot).
 
+## Moderation
+With these commands you can mention the user's name, nickname, id or discrim.
+
+| Command                    | Description                                                           | Example usage                               |
+|----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
+| ;;clear                    | Deletes all messages by this bot in the last 50 messages of this channel.   | ;;clear                         |
+| ;;hardban ***@user***       | Bans a user and deletes his messages from the last 7 days.             | ;;hardban @Frederikam                               |
+| ;;kick ***@user***          | Kick a user from this guild.                                   | ;;kick @ObeIisk                               |
+| ;;softban ***@user***       | Softbans a user by kicking him and deleting his messages from the last 7 days.                                   | ;;softban @ObeIisk                              |
+
+
 ## Fun
 
 | Command                    | Description                                                           | Example usage                               |
@@ -27,30 +38,3 @@
 | ;;say ***text***            | Makes the bot echo something.                                   | ;;say test                               |
 | ;;serverinfo                 | Displays some stats about this guild.                                   | ;;serverinfo                               |
 | ;;userinfo OR ;;userinfo ***@username***                 | Displays information about yourself or a user known to the bot.                                   | ;;userinfo OR ;;userinfo @FredBoat♪♪#7284                        |
-
-# TO DO:
-
-## Memes
-
-| Command                    | Description                                                           | Example usage                               |
-|----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-| ;;akinator                 | Play a guessing game with Akinator.                                   | ;;akinator                               |
-
-
-## Moderation
-
-| Command                    | Description                                                           | Example usage                               |
-|----------------------------|-----------------------------------------------------------------------|---------------------------------------------|
-| ;;clear                    | Deletes all messages by this bot in the last 50 messages of this channel.   | ;;clear                         |
-| ;;hardban ***@user***       | Bans a user and deletes his messages from the last 7 days.             | ;;hardban @Frederikam                               |
-| ;;kick ***@user***          | Kick a user from this guild.                                   | ;;kick @ObeIisk                               |
-| ;;softban ***@user***       | Softbans a user by kicking him and deleting his messages from the last 7 days.                                   | ;;softban @ObeIisk                              |

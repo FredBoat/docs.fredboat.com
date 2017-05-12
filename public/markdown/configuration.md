@@ -29,3 +29,6 @@ If you want to get the bot to unpause when someone joins the voice chat, you can
 ```
 ;;config auto_resume true
 ```
+
+## Enabling/disabling automatic deletion of ;;play requests
+If FredBoat has permission to delete messages, it will automatically delete any valid ;;play requests in case the spam  gets too much. If you prefer to keep the messages, you can just disable this bot's delete messages permission. 
