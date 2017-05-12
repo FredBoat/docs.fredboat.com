@@ -1,3 +1,5 @@
+@import "vars"
+
 $fredboatColor: #1CBFE2
 $tocBg: #2E3136
 $tocBorderColor: #4c5059
@@ -11,6 +13,9 @@ $headerHeight: 64px
     width: calc(100% - #{$pageMargin}*2)
     background: $fredboatColor
     padding: 0 $pageMargin 0 $pageMargin
+    @media screen and (max-width: $breakLarge)
+        padding: 0 10px 0 10px
+        width: calc(100% - 20px)
 
 .logo
     height: 48px
@@ -28,14 +33,6 @@ $headerHeight: 64px
     user-select: none
     cursor: default
 
-.header-left
-    height: 100%
-    display: inline
-    position: relative
-    bottom: 3px
-    width: 0
-    margin-left: 42px
-
 .header-right
     float: right
     height: 100%
@@ -46,6 +43,9 @@ $headerHeight: 64px
     .icons
         display: inline
         height: 16px
+
+        @media screen and (max-width: $breakLarge)
+            display: none
 
         img
             margin: 24px 6px 0 6px
@@ -83,6 +83,11 @@ $headerHeight: 64px
     bottom: 3px
     opacity: 0.8
     transition: opacity .3s
+
+    @media screen and (max-width: $breakLarge)
+        padding-left: 10px
+        line-height: 40px
+        position: static
 
 .header-button:hover
     opacity: 1

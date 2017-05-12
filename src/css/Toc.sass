@@ -1,9 +1,12 @@
 @import App.sass
+@import "vars"
 
 .Toc
     width: 216px
     height: calc(100vh - #{$headerHeight})
     padding-left: calc(#{$pageMargin} + 28px)
+    @media screen and (max-width: $breakLarge)
+        padding-left: 10px
     background-color: $tocBg
     font-family: 'Pragmati Narrow', sans-serif
     flex-grow: 1

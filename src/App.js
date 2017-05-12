@@ -16,8 +16,6 @@ class App extends Component {
                 <div className="header">
                     <img className="logo" src={logo} alt="Logo" draggable="false"/>
                     <div className="logo-text">FredBoat</div>
-                    <div className="header-left">
-                    </div>
                     <div className="header-right">
                         <a className="header-button" href="https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot">Add to Discord</a>
                         <div className="icons">
