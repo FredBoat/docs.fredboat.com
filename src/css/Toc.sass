@@ -11,6 +11,9 @@
     font-family: 'Pragmati Narrow', sans-serif
     flex-grow: 1
 
+    @media screen and (max-width: $breakSmall)
+        display: none
+
     .toc-title
         color: white
         font-weight: bold
@@ -18,6 +21,8 @@
         text-transform: uppercase
         padding-top: 32px
         margin-bottom: 16px
+        @media screen and (max-width: $breakLarge)
+            padding-top: 24px
     .toc-separator
         width: 90%
         height: 1px

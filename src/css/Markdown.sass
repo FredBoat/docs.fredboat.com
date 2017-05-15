@@ -1,3 +1,5 @@
+@import "vars"
+
 $colorTextBody: #cacaca
 
 .Markdown
@@ -42,10 +44,15 @@ $colorTextBody: #cacaca
         color: $colorTextBody
     li > p
         margin: 4px
+    h1
+        @media screen and (max-width: $breakLarge)
+            margin-top: 4px
 
 .content
     max-width: 50em
     padding: 8px 16px 32px 32px
+    @media screen and (max-width: $breakLarge)
+        padding: 8px 8px 8px 8px
 
 .Loading > div
     margin-top: 25vh !important

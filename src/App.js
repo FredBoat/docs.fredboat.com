@@ -3,6 +3,7 @@ import "./css/App.css";
 import logo from "../public/logo.svg";
 import Markdown from "./Markdown";
 import Toc from "./Toc";
+import BottomBar from "./BottomBar";
 
 import discord from "../public/icon/discord.svg";
 import patreon from "../public/icon/patreon.png";
@@ -41,6 +42,8 @@ class App extends Component {
 
                     <Markdown name={this.props.page}/>
                 </div>
+
+                <BottomBar page={this.props.page}/>
             </div>
         )
     }

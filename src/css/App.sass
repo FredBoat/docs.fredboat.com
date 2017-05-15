@@ -17,6 +17,12 @@ $headerHeight: 64px
         padding: 0 10px 0 10px
         width: calc(100% - 20px)
 
+    @media screen and (max-width: $breakSmall)
+        // Center the logo
+        display: flex
+        justify-content: center
+        align-items: center
+
 .logo
     height: 48px
     width: 48px
@@ -32,6 +38,8 @@ $headerHeight: 64px
     line-height: 64px
     user-select: none
     cursor: default
+    @media screen and (max-width: $breakSmall)
+        display: none
 
 .header-right
     float: right
@@ -89,6 +97,9 @@ $headerHeight: 64px
         line-height: 40px
         position: static
 
+    @media screen and (max-width: $breakSmall)
+        display: none
+
 .header-button:hover
     opacity: 1
 
@@ -107,6 +118,9 @@ $headerHeight: 64px
 .Markdown
     height: calc(100vh - #{$headerHeight})
     width: calc(100vw - #{$tocWidth})
+    @media screen and (max-width: $breakSmall)
+        //Make space for the BottomBar
+        height: calc(100vh - #{$headerHeight} - 64px)
     border-left: 1px solid #4c5059
     flex-grow: 2
 
