@@ -71,5 +71,8 @@ $colorTextBody: #cacaca
 
     height: $headerHeight
     background-color: $fredboatColor
-    display: flex
-    justify-content: center
+
+    .logo
+        // Not using flexbox here, because the scrollbar can push the center
+        position: relative
+        left: calc(50vw - 24px)
