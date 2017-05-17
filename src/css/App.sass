@@ -1,12 +1,10 @@
 @import "vars"
 
-$fredboatColor: #1CBFE2
 $tocBg: #2E3136
 $tocBorderColor: #4c5059
 $blurple: #7289DA
 $pageMargin: 100px
 $tocWidth: 300px
-$headerHeight: 64px
 
 .header
     height: $headerHeight
@@ -18,10 +16,8 @@ $headerHeight: 64px
         width: calc(100% - 20px)
 
     @media screen and (max-width: $breakSmall)
-        // Center the logo
-        display: flex
-        justify-content: center
-        align-items: center
+        // A mobile header will be used on small screens to replace this
+        display: none
 
 .logo
     height: 48px
@@ -97,9 +93,6 @@ $headerHeight: 64px
         line-height: 40px
         position: static
 
-    @media screen and (max-width: $breakSmall)
-        display: none
-
 .header-button:hover
     opacity: 1
 
@@ -120,7 +113,7 @@ $headerHeight: 64px
     width: calc(100vw - #{$tocWidth})
     @media screen and (max-width: $breakSmall)
         //Make space for the BottomBar
-        height: calc(100vh - #{$headerHeight} - 96px)
+        height: calc(100vh - 96px)
     border-left: 1px solid #4c5059
     flex-grow: 2
 

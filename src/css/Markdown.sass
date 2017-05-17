@@ -64,3 +64,12 @@ $colorTextBody: #cacaca
 .Loading > div > svg > circle
     animation: dash 1.5s ease-in-out infinite !important
     stroke: white !important
+
+.mobile-header
+    @media screen and (min-width: $breakSmall)
+        display: none
+
+    height: $headerHeight
+    background-color: $fredboatColor
+    display: flex
+    justify-content: center
