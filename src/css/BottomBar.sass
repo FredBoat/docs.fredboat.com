@@ -4,12 +4,33 @@
     @media screen and (min-width: $breakSmall)
         //Small screens only
         display: none
-    height: 64px
+    height: 96px
     width: 100%
     background-color: #2E3136
-    overflow: hidden
+    overflow-x: auto
+    overflow-y: hidden
+    white-space: nowrap
 
-.BottomBarButton
-    width: 64px
-    height: 64px
+.BottomBar::-webkit-scrollbar
+    display: none
+
+.BottomBarButton, .BottomBarButton > a
+    width: 96px
+    height: 96px
     display: inline-block
+    color: #868686
+    text-align: center
+    vertical-align: top
+    text-decoration: none
+    .fa
+        line-height: 54px
+    div
+        margin: 0
+        white-space: normal
+        font-family: Lato, sans-serif
+
+.BottomBarButton.active > a
+    color: #c0c0c0
+
+.BottomBarButton:hover > a
+    color: white

@@ -6,7 +6,8 @@ $colorTextBody: #cacaca
     background-color: #36393E
     color: whitesmoke
     font-family: Lato, sans-serif
-    overflow: auto
+    overflow-y: auto
+    overflow-x: hidden
     a
         color: lightskyblue
     p, td
@@ -14,18 +15,19 @@ $colorTextBody: #cacaca
     code
         background-color: #272524
         padding: 8px
-        display: block
         word-wrap: break-word
     pre > code
+        display: block
         border: 2px solid #44494f
         border-radius: 6px
-        white-space: pre-wrap
+        overflow-x: auto
     p > code
-        display: inline
         padding: 2px
         border-radius: 4px
     table
         border: white
+        overflow-x: auto
+        display: block
     tbody
         background-color: #3c4046
         tr:nth-child(odd)
@@ -62,18 +64,3 @@ $colorTextBody: #cacaca
 .Loading > div > svg > circle
     animation: dash 1.5s ease-in-out infinite !important
     stroke: white !important
-
-/* Scroll bar */
-.Markdown::-webkit-scrollbar
-    width: 1em
-
-.Markdown::-webkit-scrollbar-track
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
-
-
-.Markdown::-webkit-scrollbar-thumb
-    background-color: darkgrey
-    outline: 1px solid slategrey
-
-::-webkit-scrollbar-corner
-    background-color: rgba(0,0,0,0.3)

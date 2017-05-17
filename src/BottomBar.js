@@ -6,12 +6,12 @@ class BottomBar extends Component {
     render() {
         return (
             <div className="BottomBar">
-                <BottomBarButton activePage={this.props.page} page="index" name="Quickstart"/>
-                <BottomBarButton activePage={this.props.page} page="non_music" name="Other commands"/>
-                <BottomBarButton activePage={this.props.page} page="faq" name="FAQ"/>
-                <BottomBarButton activePage={this.props.page} page="terms" name="Terms of Service"/>
-                <BottomBarButton activePage={this.props.page} page="selfhosting" name="Selfhosting"/>
-                <BottomBarButton activePage={this.props.page} page="systemdservice" name="Selfhosting (systemd)"/>
+                <BottomBarButton activePage={this.props.page} icon="music" page="index" name="Quickstart"/>
+                <BottomBarButton activePage={this.props.page} icon="ellipsis-h" page="non_music" name="Other commands"/>
+                <BottomBarButton activePage={this.props.page} icon="question" page="faq" name="FAQ"/>
+                <BottomBarButton activePage={this.props.page} icon="legal" page="terms" name="Terms of Service"/>
+                <BottomBarButton activePage={this.props.page} icon="terminal" page="selfhosting" name="Selfhosting"/>
+                <BottomBarButton activePage={this.props.page} icon="terminal" page="systemdservice" name="Selfhosting (systemd)"/>
             </div>
         )
     }
