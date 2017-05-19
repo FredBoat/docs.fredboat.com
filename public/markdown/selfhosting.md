@@ -90,4 +90,4 @@ imgurClientId:
 Once you are done configuring, run the bot with `java -jar FredBoat-1.0.jar`.
 
 
-[Follow this link](http://docs.frederikam.com/systemdservice) to find a tutorial on running FredBoat as a `systemd` service.
+[Follow this link](http://docs.fredboat.com/systemdservice) to find a tutorial on running FredBoat as a `systemd` service.

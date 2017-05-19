@@ -16,7 +16,7 @@ The bot will only listen to music commands invoked in channels it can actually *
 If you want to restrict the bot to a specific role, you can always just restrict the bot to a channel only accessible by a specific set of roles.
 
 ## How do I selfhost the bot?
-FredBoat was not originally written to be easily set up for selfhosting, but due to popular demand [I have written a tutorial.](http://docs.frederikam.com/selfhosting)
+FredBoat was not originally written to be easily set up for selfhosting, but due to popular demand [I have written a tutorial.](http://docs.fredboat.com/selfhosting)
 
 ## The music bot is telling me it doesn't have permission to connect/play music. How do I give it permission?
 You are trying to play music in a voice channel, but your __Discord server permissions__ prevents it from connecting or speaking. You would need to change the permissions of the channel to allow the bot to connect and speak, as you would do with a user. For official help on this topic, see [Discord's support center](https://support.discordapp.com/hc/en-us/articles/206029707).

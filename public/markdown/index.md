@@ -74,7 +74,7 @@ Before you do anything, please [read our FAQ](http://localhost:3000/faq).
 You can join either our [Discord server](https://discord.gg/cgPFW4q) or tweet us at [@DiscordFredBoat](https://twitter.com/DiscordFredBoat).
 
 ## Legal
-By using any of my hosted (but not selfhosted) bots you are subject to our (very minimal!) [terms of service](http://docs.frederikam.com/terms).
+By using any of my hosted (but not selfhosted) bots you are subject to our (very minimal!) [terms of service](http://docs.fredboat.com/terms).
 
 Effective as of 25-apr-2017.
 
