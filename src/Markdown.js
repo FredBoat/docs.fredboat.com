@@ -23,7 +23,8 @@ class Markdown extends Component {
 
         this.state = {
             loadedMarkdown: null,
-            loadedPage: null
+            loadedPage: null,
+            is404: false
         };
 
         this.processMarkdown(this);
@@ -35,7 +36,8 @@ class Markdown extends Component {
             if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
                 instance.setState((prevState) =>({
                     loadedMarkdown: marked(xmlHttp.responseText),
-                    loadedPage: instance.props.name
+                    loadedPage: instance.props.name,
+                    is404: xmlHttp.responseText.toLowerCase().match(/^<!doctype html>/) !== null //Checks if we landed on a 404 page by looking for HTML
                 }))
             }
         };
@@ -46,7 +48,13 @@ class Markdown extends Component {
     render() {
         let inner = null;
 
-        if(this.state.loadedPage !== this.props.name) {
+        if(this.state.is404) {
+            inner = (
+                <div className="text-404">
+                    Error 404 ~ Not found
+                </div>
+            );
+        } else if(this.state.loadedPage !== this.props.name) {
             inner = (
                 <div className="Loading">
                     <Loading/>
