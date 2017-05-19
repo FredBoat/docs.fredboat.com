@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import {BrowserRouter as Router, Route, Redirect} from 'react-router-dom'
+import {Route, Redirect} from 'react-router-dom'
+import { BrowserRouter } from 'react-g-analytics';
 import './css/index.css';
 
 const AppRoute = ({ match }) => {
@@ -15,11 +16,11 @@ const AppRoute = ({ match }) => {
 };
 
 ReactDOM.render(
-    <Router>
+    <BrowserRouter id="UA-25845175-7">
         <div>
             <Route exact path="/" component={AppRoute}/>
             <Route path="/:page" component={AppRoute}/>
         </div>
-    </Router>,
+    </BrowserRouter>,
   document.getElementById('root')
 );
