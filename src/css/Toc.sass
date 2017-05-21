@@ -45,7 +45,7 @@ $tocBorderColor: #4c5059
     @media screen and (max-width: $breakLarge)
         margin-left: 10px
 
-#ad-sidebar
+#ad-sidebar, #ad-sidebar-blocked
     margin-right: 10px
     margin-left: 10px
     margin-bottom: 10px
@@ -55,3 +55,36 @@ $tocBorderColor: #4c5059
         display: none
     @media screen and (max-height: $breakTocAd)
         display: none
+
+.adsbygoogle
+    position: relative
+    bottom: 26px
+
+.adblock-notif
+    width: 336px
+    height: 280px
+    color: $colorTextBody
+    font-family: Lato, sans-serif
+    font-size: 20px
+
+    border: dashed medium #4c5059
+    background-color: #202226
+    border-radius: 16px
+
+    display: flex
+    justify-content: center
+    flex-direction: column
+
+    p
+        margin: 0
+        text-align: center
+    a
+        color: #FAA61A
+
+.about-ads
+    position: absolute
+    bottom: 10px
+    color: $colorTextBody
+    margin: 0
+    a
+        color: $colorTextBody
