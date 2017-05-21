@@ -1,16 +1,22 @@
-@import App.sass
 @import "vars"
 
+$tocBg: #2E3136
+$tocBorderColor: #4c5059
+
 .Toc
-    width: 216px
+    width: $tocWidth
     height: calc(100vh - #{$headerHeight})
-    padding-left: calc(#{$pageMargin} + 28px)
-    @media screen and (max-width: $breakLarge)
-        padding-left: 10px
     background-color: $tocBg
     font-family: 'Pragmati Narrow', sans-serif
     flex-grow: 1
 
+    // A flexbox with two items. The ToC at the top, and potentially an ad at the bottom
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+    @media screen and (max-width: $breakLarge)
+        width: calc(#{$tocWidth} - #{$pageMargin} - 80px)
     @media screen and (max-width: $breakSmall)
         display: none
 
@@ -33,3 +39,17 @@
         font-size: 16px
         color: white
         margin-bottom: 16px
+
+.toc-inner
+    margin-left: calc(#{$pageMargin} + 28px)
+    @media screen and (max-width: $breakLarge)
+        margin-left: 10px
+
+#ad-sidebar
+    margin-right: 10px
+    margin-left: 10px
+    margin-bottom: 10px
+    display: flex
+    justify-content: center
+    @media screen and (max-width: $breakLarge)
+        display: none
