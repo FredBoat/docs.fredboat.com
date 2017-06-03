@@ -49,14 +49,19 @@ Example credentials.yaml file:
 
 ```yaml
 ---
+
+### *** WARNING ***
+### ALMOST EVERYTHING REQUESTED IN THIS FILE IS CONFIDENTIAL CREDENTIALS
+### IF YOU POST THIS FILE ONLINE (such as on GitHub) YOUR BOT COULD BE COMPROMISED
+
 # For the ;;mal command
 # Create an account on https://myanimelist.net/ and enter its login below
 malUser:
 malPassword:
 
 token:
-  # add your discord bot token below and remove the # (but keep two spaces in front of it)
-  # find the token of your bot on https://discordapp.com/developers/applications/me
+  # Add your discord bot token below and remove the # (but keep two spaces in front of it)
+  # Find the token of your bot on https://discordapp.com/developers/applications/me
   # Optionally fill the other three tokens below in
 
   #beta: YourTokenHere
@@ -65,9 +70,9 @@ token:
   music:
   patron:
 
-# Used by the ;;split and ;;np commands. Must be hooked up to the Youtube Data API
-# add your google API keys in the brackets below, separated by commas if more than one, uncomment by removing the #
-# how to get them: https://developers.google.com/youtube/registering_an_application
+# Used by the ;;split and ;;np commands. Must be hooked up to the Youtube Data API.
+# Add your google API keys in the brackets below, separated by commas if more than one, uncomment by removing the #
+# How to get them: https://developers.google.com/youtube/registering_an_application
 
 #googleServerKeys: [YourYoutubeAPIKey]
 #googleServerKeys: [Key1, Key2]
@@ -81,10 +86,17 @@ cbKey:
 # Used for the ;;leet command
 mashapeKey:
 
+
 # Used to access imgur galleries for some RandomImageCommands
-# acquired from here: https://api.imgur.com/oauth2/addclient
-# choose an option that does not require an Authorization callback URL
+# Acquired from here: https://api.imgur.com/oauth2/addclient
+# Choose an option that does not require an Authorization callback URL
 imgurClientId:
+
+
+# Used to retrieve Spotify playlists
+# Get them from here: https://developer.spotify.com/my-applications
+spotifyId:
+spotifySecret:
 ```
 
 Once you are done configuring, run the bot with `java -jar FredBoat-1.0.jar`.
