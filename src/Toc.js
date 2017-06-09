@@ -69,6 +69,7 @@ class Toc extends Component {
                         Contents
                     </div>
                     <TocHeader activePage={this.props.page} page="index" name="Quickstart"/>
+                    <TocHeader activePage={this.props.page} page="donate" name="Donate"/>
                     <TocHeader activePage={this.props.page} page="configuration" name="Configuration"/>
                     {/*<TocHeader activePage={this.props.page} page="music" name="Music commands"/>*/}
                     <TocHeader activePage={this.props.page} page="non_music" name="Other commands"/>

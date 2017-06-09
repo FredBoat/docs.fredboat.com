@@ -7,6 +7,7 @@ class BottomBar extends Component {
         return (
             <div className="BottomBar">
                 <BottomBarButton activePage={this.props.page} icon="music" page="index" name="Quickstart"/>
+                <BottomBarButton activePage={this.props.page} icon="money" page="donate" name="Donate"/>
                 <BottomBarButton activePage={this.props.page} icon="cog" page="configuration" name="Configuration"/>
                 <BottomBarButton activePage={this.props.page} icon="ellipsis-h" page="non_music" name="Other commands"/>
                 <BottomBarButton activePage={this.props.page} icon="question" page="faq" name="FAQ"/>
