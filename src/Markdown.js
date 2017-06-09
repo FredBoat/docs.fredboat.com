@@ -7,6 +7,22 @@ import "./css/Markdown.css";
 import "highlight.js/styles/monokai-sublime.css";
 
 class Markdown extends Component {
+
+    patreonButton = `
+        <div class="md-button-wrapper">
+            <a class="md-button patreon-button" href="https://www.patreon.com/fredboat">
+                Become a patron
+            </a>
+        </div>
+    `;
+    paypalButton = `
+        <div class="md-button-wrapper">
+            <a class="md-button paypal-button" href="https://www.paypal.me/frederikam">
+                Donate via PayPal
+            </a>
+        </div>
+    `;
+
     constructor(props) {
         super(props);
 
@@ -35,7 +51,7 @@ class Markdown extends Component {
         xmlHttp.onreadystatechange = function() {
             if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
                 instance.setState((prevState) =>({
-                    loadedMarkdown: marked(xmlHttp.responseText),
+                    loadedMarkdown: instance.postprocessMarkdown(marked(xmlHttp.responseText)),
                     loadedPage: instance.props.name,
                     is404: xmlHttp.responseText.toLowerCase().match(/^<!doctype html>/) !== null //Checks if we landed on a 404 page by looking for HTML
                 }))
@@ -43,6 +59,12 @@ class Markdown extends Component {
         };
         xmlHttp.open("GET", window.location.origin + "/markdown/" + instance.props.name + ".md", true); // true for asynchronous
         xmlHttp.send(null);
+    }
+
+    postprocessMarkdown(markdown) {
+        markdown = markdown.replace("%PATREON_BUTTON%", this.patreonButton.toString());
+        markdown = markdown.replace("%PAYPAL_BUTTON%", this.paypalButton);
+        return markdown;
     }
 
     render() {

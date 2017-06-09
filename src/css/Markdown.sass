@@ -26,6 +26,8 @@
         border-radius: 4px
         font-family: 'Fira Code', monospace
         font-feature-settings: "calt" 1
+    strong
+        text-decoration: underline
     table
         border: white
         overflow-x: auto
@@ -86,3 +88,29 @@
     display: block
     margin-top: calc(33.33vh - 64px/3)
     text-align: center
+
+/* And now for the custom MD stuff */
+.md-button-wrapper
+    display: flex
+    justify-content: center
+
+    .md-button
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 250px
+        height: 42px
+        border-radius: 21px
+        text-decoration: none
+        color: white
+        font-size: 20px
+        margin: 12px
+        transition: background-color .5s
+    .patreon-button
+        background-color: #E6461A
+    .patreon-button:hover
+        background-color: #bf3918
+    .paypal-button
+        background-color: #0070BA
+    .paypal-button:hover
+        background-color: #005c99
