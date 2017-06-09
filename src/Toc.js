@@ -42,7 +42,7 @@ class Toc extends Component {
                 <div id="ad-sidebar">
                     <div className="adblock-notif">
                         <p>I block ads too.</p>
-                        <p>Support me on <a href="https://www.patreon.com/fredboat">Patreon</a> instead?</p>
+                        <p><Link to="/donate">Donate instead?</Link></p>
                     </div>
                 </div>
             );
@@ -54,7 +54,7 @@ class Toc extends Component {
                          data-ad-client="ca-pub-6361371060709028"
                          data-ad-slot="7243035790"
                          data-ad-format="auto"/>
-                    <p className="about-ads">Ads keep FredBoat afloat. <Link to="/about_ads">Learn more</Link>.</p>
+                    <p className="about-ads">Ads keep FredBoat afloat. <Link to="/donate">Learn more</Link>.</p>
                 </div>
             );
 
