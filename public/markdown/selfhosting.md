@@ -99,7 +99,7 @@ spotifyId:
 spotifySecret:
 ```
 
-Once you are done configuring, run the bot with `java -jar FredBoat-1.0.jar`.
+Once you are done configuring, run the bot with `java -jar -Xmx128m FredBoat-1.0.jar`.
 
 
 [Follow this link](http://docs.fredboat.com/systemdservice) to find a tutorial on running FredBoat as a `systemd` service.
