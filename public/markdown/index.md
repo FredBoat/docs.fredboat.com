@@ -1,5 +1,5 @@
 # Welcome to FredBoat Docs
-FredBoat is an open-source music bot developed in Java. The bot is based off of [JDA](https://github.com/DV8FromTheWorld/JDA) and was created by [@Frederikam](https://github.com/Frederikam/).
+FredBoat is a free Discord music bot that delivers high-quality music to your Discord server. The music bot is made to be easy plug in to your Discord server with no configuration. 
 
 ## Setting up the bot
 FredBoat is made to be super simple to use! Getting FredBoat running on your server is simple. You can invite the bot by authenticating it with your account using [this](https://discordapp.com/oauth2/authorize?&client_id=184405253028970496&scope=bot) link. Bear in mind that you must have `Manage Server` permissions to be able to do this.
