@@ -11,9 +11,9 @@ $tocBorderColor: #4c5059
     flex-grow: 1
 
     // A flexbox with two items. The ToC at the top, and potentially an ad at the bottom
-    display: flex
-    flex-direction: column
-    justify-content: space-between
+    //display: flex
+    //flex-direction: column
+    //justify-content: space-between
 
     @media screen and (max-width: $breakLarge)
         width: calc(#{$tocWidth} - #{$pageMargin} - 80px)
@@ -45,46 +45,50 @@ $tocBorderColor: #4c5059
     @media screen and (max-width: $breakLarge)
         margin-left: 10px
 
-#ad-sidebar, #ad-sidebar-blocked
+#ad-sidebar
     margin-right: 10px
     margin-left: 10px
     margin-bottom: 10px
-    display: flex
     justify-content: center
-    @media screen and (max-width: $breakLarge)
-        display: none
     @media screen and (max-height: $breakTocAd)
         display: none
 
-.adsbygoogle
-    position: relative
-    bottom: 26px
 
-.adblock-notif
-    width: 336px
-    height: 280px
-    color: $colorTextBody
-    font-family: Lato, sans-serif
-    font-size: 20px
+#carbonads
+    margin-top: 32px
+    margin-left: $pageMargin
+    padding: 18px 8px 8px 8px
+    border: solid 2px $tocBorderColor
 
-    border: dashed medium #4c5059
-    background-color: #202226
-    border-radius: 16px
+    @media screen and (max-width: $breakLarge)
+        margin-left: 0px
 
+    a
+        text-decoration: none
+
+
+.carbon-wrap
     display: flex
     justify-content: center
     flex-direction: column
 
-    p
-        margin: 0
-        text-align: center
     a
-        color: #FAA61A
+        display: flex
+        justify-content: center
 
-.about-ads
-    position: absolute
-    bottom: 10px
+
+.carbon-text
     color: $colorTextBody
-    margin: 0
-    a
-        color: $colorTextBody
+    margin: 10px 0 10px 0
+    transition: color 200ms
+
+.carbon-poweredby
+    text-align: right
+    display: block
+    font-size: 11.5px
+    margin-bottom: 0 !important
+    transition: color 500ms
+    color: #989898
+
+.carbon-text:hover, .carbon-poweredby:hover
+    color: white
