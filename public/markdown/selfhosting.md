@@ -45,6 +45,8 @@ Music bot only: Fill in the Discord bot token for patron and at least one Youtub
 
 Full bot: Fill in the Discord bot token for beta and every other setting too. Set development to true in the `config.yaml`.
 
+Multiple bots: Change the port the of the additional bots to e.g. `1357`, `1358` etc. The path is: `FredBoat/FredBoat/src/main/java/fredboat/api/API.java` Just look for `private static int PORT = 1356;`.
+
 Example credentials.yaml file:
 
 ```yaml
