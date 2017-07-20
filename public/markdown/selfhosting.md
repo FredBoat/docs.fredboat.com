@@ -25,7 +25,7 @@ git clone --recursive https://github.com/Frederikam/FredBoat.git
 Now compile the bot:
 
 ```sh
-cd FredBoat/FredBoat
+cd FredBoat
 mvn package shade:shade
 ```
 
@@ -41,7 +41,7 @@ The compiled bot can be found in `FredBoat/FredBoat/target`. A sample `config.ya
 
 In order to run the bot, you must first populate your bot with API credentials for Discord in the `credentials.yaml` file.
 
-Music bot only: Fill in the Discord bot token for patron and at least one Youtube API key. Set patron to true in the `config.yaml` file and development to false.
+Music bot only: Fill in the Discord bot token for patron and at least one Youtube API key. Set patron to true in the `config.yaml` file and development to false. Fill in the Spotify tokens to use Spotify.
 
 Full bot: Fill in the Discord bot token for beta and every other setting too. Set development to true in the `config.yaml`.
 
@@ -60,22 +60,19 @@ malUser:
 malPassword:
 
 token:
-  # Add your discord bot token below and remove the # (but keep two spaces in front of it)
+  # Add your discord bot token below to the beta and patron slots, between the quotation marks
   # Find the token of your bot on https://discordapp.com/developers/applications/me
-  # Optionally fill the other three tokens below in
 
-  #beta: YourTokenHere
-
+  beta: "YourTokenHere"
+  patron: "YourTokenHere"
   production: 
   music:
-  patron:
 
 # Used by the ;;split and ;;np commands. Must be hooked up to the Youtube Data API.
-# Add your google API keys in the brackets below, separated by commas if more than one, uncomment by removing the #
-# How to get them: https://developers.google.com/youtube/registering_an_application
+# Add your google API key in the brackets below between the quotation marks
+# How to get the key: https://developers.google.com/youtube/registering_an_application
 
-#googleServerKeys: [YourYoutubeAPIKey]
-#googleServerKeys: [Key1, Key2]
+googleServerKeys: ["YourYoutubeAPIKey"]
 
 
 # From https://cleverbot.io/
