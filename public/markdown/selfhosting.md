@@ -80,10 +80,6 @@ cbUser:
 cbKey:
 
 
-# Used for the ;;leet command
-mashapeKey:
-
-
 # Used to access imgur galleries for some RandomImageCommands
 # Acquired from here: https://api.imgur.com/oauth2/addclient
 # Choose an option that does not require an Authorization callback URL
