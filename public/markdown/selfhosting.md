@@ -43,7 +43,7 @@ In order to run the bot, you must first populate your bot with API credentials f
 
 Music bot only: Fill in the Discord bot token for patron and at least one Youtube API key. Set patron to true in the `config.yaml` file and development to false. Fill in the Spotify tokens to use Spotify.
 
-Full bot: Fill in the Discord bot token for beta and every other setting too. Set development to true in the `config.yaml`.
+Full bot: Fill in the Discord bot token for beta and every other setting too. Set development to true in the `config.yaml` file and patron to false.
 
 Example credentials.yaml file:
 
