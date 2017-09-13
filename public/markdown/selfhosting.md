@@ -7,28 +7,24 @@ This is a tutorial for users who would like to host their own bot running Fredbo
 
 ### Requirements
 
-1. [Java 8 JDK](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+1. [Java 8 JRE](https://www.java.com/en/download/)
 
-2. git and maven in your PATH
+2. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
 
-3. [A registered Discord application](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token)
+3. Linux \(Windows works too, but this tutorial is targeted at Linux\)
 
-4. Linux \(Windows works too, but this tutorial is targetted at Linux\)
+4. Preferably an x86_64/AMD64 CPU. Strange things may happen if you try running FredBoat on an ARM CPU like on a Raspberry Pi. If you have no idea what this means, you're probably doing it right.
+
+5. A Google API key if you want ;;nowplaying and search to function
+
+### Download
+* Download latest [stable build](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=%3Cdefault%3E&tab=artifacts&guest=1)
+
+* Download the latest ["I-like-living-on-the-edge build"](https://ci.fredboat.com/viewLog.html?buildTypeId=FredBoat_Build&buildId=lastSuccessful&buildBranch=refs%2Fheads%2Fdevelopment&tab=artifacts&guest=1) (unstable) 
+
+* Download the [source code](https://github.com/Frederikam/FredBoat/)
 
 ### Instructions
-Clone the `master` branch of FredBoat recursively:
-
-```sh
-git clone --recursive https://github.com/Frederikam/FredBoat.git
-```
-
-Now compile the bot:
-
-```sh
-cd FredBoat
-mvn package shade:shade
-```
-
 To run the bot you should set up a directory that looks like this:
 
 ```
@@ -37,7 +33,7 @@ To run the bot you should set up a directory that looks like this:
 └──config.yaml
 ```
 
-The compiled bot can be found in `FredBoat/FredBoat/target`. A sample `config.yaml` and an example `credentials.yaml` can be found in https://github.com/Frederikam/FredBoat/tree/master/FredBoat
+A sample `config.yaml` and an example `credentials.yaml` can be found [on GitHub](https://github.com/Frederikam/FredBoat/tree/master/FredBoat)
 
 In order to run the bot, you must first populate your bot with API credentials for Discord in the `credentials.yaml` file.
 
