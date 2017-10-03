@@ -19,9 +19,9 @@ const AppRoute = ({ match }) => {
  */
 const Analytics = ({location}) => {
     if (typeof window.ga === 'function') {
+        //noinspection JSUnresolvedFunction
         window.ga('send', 'pageview', location.pathname + location.search);
     }
-    console.log(location.pathname + location.search);
     return null;
 };
 
